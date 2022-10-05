@@ -36,25 +36,23 @@ dd {
 @font-face {
   font-family: OpenSans;
   src: url("../assets/fonts/OpenSans-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: normal;
-  font-variant: normal;
-  font-size: 16px;
-  line-heigth: 1.6em;
-  color: #2A2626
+  /*font-weight: 400;*/
+  /*font-style: normal;*/
+  /*font-stretch: normal;*/
+  /*font-variant: normal;*/
+  /*font-size: 16px;*/
+  /*line-heigth: 1.6em;*/
+  /*color: #2A2626*/
 }
 
 @font-face {
   font-family: Neucha;
   src: url("../assets/fonts/Neucha-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: normal;
-  font-variant: normal;
-  /*font-size: 16px;*/
-  /*line-heigth: 1.6em;*/
-  color: #2A2626
+  /*font-weight: 400;*/
+  /*font-style: normal;*/
+  /*font-stretch: normal;*/
+  /*font-variant: normal;*/
+  /*color: #2A2626*/
 }
 
 h1, h2, h3 {
@@ -91,7 +89,7 @@ section {
   margin-bottom: 185px;
 }
 
-.title {
+.header-title {
   z-index: 10;
   position: relative;
   font-style: normal;
@@ -101,7 +99,7 @@ section {
 }
 
 .background {
-  background-color: #F5F4F0;
+  background-color: var(--light);;
   position: relative;
   width: 100%;
 }
@@ -126,16 +124,15 @@ section {
 }
 
 .orange-text {
-  color: #FE8A02;
+  color: var(--basic);
 }
 
-img {
+.main-image {
   height: 525px;
   width: auto;
   position: absolute;
   top: -55px;
   left: 296px;
-  z-index: 1;
 }
 
 .header-bottom {
@@ -160,8 +157,8 @@ img {
 .header-bottom-link {
   padding: 12px 24px;
   text-decoration:none;
-  background-color: #FE8A02;
-  color: #FFFFFF;
+  background-color: var(--basic);
+  color: var(--white);
   font-family: OpenSans;
   font-style: normal;
   font-weight: 700;
