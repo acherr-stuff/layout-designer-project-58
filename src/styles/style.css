@@ -36,23 +36,11 @@ dd {
 @font-face {
   font-family: OpenSans;
   src: url("../assets/fonts/OpenSans-Regular.ttf") format("truetype");
-  /*font-weight: 400;*/
-  /*font-style: normal;*/
-  /*font-stretch: normal;*/
-  /*font-variant: normal;*/
-  /*font-size: 16px;*/
-  /*line-heigth: 1.6em;*/
-  /*color: #2A2626*/
 }
 
 @font-face {
   font-family: Neucha;
   src: url("../assets/fonts/Neucha-Regular.ttf") format("truetype");
-  /*font-weight: 400;*/
-  /*font-style: normal;*/
-  /*font-stretch: normal;*/
-  /*font-variant: normal;*/
-  /*color: #2A2626*/
 }
 
 h1, h2, h3 {
@@ -167,4 +155,51 @@ section {
   display: block;
   width: 100px;
   margin-top: 40px;
+}
+
+#video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /*position: relative;*/
+}
+
+.video-title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 72px;
+}
+
+#video .text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*.video {*/
+/*  margin-right: auto;*/
+/*  margin-left: auto;*/
+/*  margin-top: 30px;*/
+/*}*/
+.video {
+  filter: drop-shadow(0px 16px 32px rgba(0, 0, 0, 0.15));
+  margin-bottom: -200px;
+
+}
+
+.video-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation {
+  background-color: var(--basic-dark);
+  width: 100%;
+
 }
