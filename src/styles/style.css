@@ -421,3 +421,108 @@ section {
 br {
   height: 20px;
 }
+
+footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.feedback-form {
+  height: 190px;
+  background-color: var(--basic-dark);
+  padding-left: 55px;
+  padding-right: 55px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.feedback-form .column {
+  display: flex;
+  width: 50%;
+}
+
+.feedback-form h3 {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 120%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.email {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.email-form {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.input {
+  height: 50px;
+  padding: 15px;
+  box-sizing: border-box;
+  width: 415px;
+  border: 1px solid #E3E3E3;
+  vertical-align: middle;
+  /*flex: 1;*/
+  outline:none;
+}
+
+.input::placeholder {
+  color: var(--basic-dark);
+  opacity: 0.2;
+  font-size: 13.1px;
+}
+
+.input-label {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  margin-bottom: 9px;
+}
+
+.send {
+  width: 70px;
+  height: 50px;
+  background-color: var(--basic);
+  cursor: pointer;
+  border: none;
+}
+
+.send::before {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  margin-right: 7px;
+
+  vertical-align: middle;
+
+  background-image: url("../assets/images/send.svg");
+  background-repeat: no-repeat;
+
+  content: "";
+}
+
+.text.subtitle {
+  font-size: 12px;
+  line-height: 160%;
+}
+
+form {
+  margin:0;
+  padding:0;
+}
+
+.contacts {
+  margin-top: 60px;
+}
+
+.contacts-line {
+  font-size: 14px;
+  line-height: 160%;
+  text-align: center;
+  margin-top: 16px;
+}
