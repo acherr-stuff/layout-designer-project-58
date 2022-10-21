@@ -32,9 +32,11 @@ dd {
   margin: 0;
 }
 
-/*body {*/
-/*  width: 1440px;*/
-/*}*/
+/* body { */
+
+/*  width: 1440px; */
+
+/* } */
 
 @font-face {
   font-family: OpenSans;
@@ -49,7 +51,7 @@ dd {
 h1,
 h2,
 h3 {
-  font-family: Neucha;
+  font-family: Neucha, serif;
   line-height: 1.2em;
 }
 
@@ -161,7 +163,7 @@ section {
   color: #2a2626;
   font-weight: 400;
   font-size: 16px;
-  font-family: OpenSans;
+  font-family: OpenSans, sans-serif;
   font-style: normal;
   line-height: 1.6;
 }
@@ -175,7 +177,7 @@ section {
   color: var(--white);
   font-weight: 700;
   font-size: 16px;
-  font-family: OpenSans;
+  font-family: OpenSans, serif;
   font-style: normal;
   line-height: 160%;
   text-decoration: none;
@@ -315,7 +317,7 @@ section {
   color: #908d8b;
   font-weight: 400;
   font-size: 24px;
-  font-family: "Neucha";
+  font-family: Neucha, sans-serif;
   font-style: normal;
   line-height: 29px;
 }
@@ -333,7 +335,7 @@ section {
 .line p {
   font-weight: 700;
   font-size: 14px;
-  font-family: OpenSans;
+  font-family: OpenSans, sans-serif;
   font-style: normal;
   line-height: 17px;
   text-transform: uppercase;
@@ -355,10 +357,6 @@ section {
   gap: 30px;
   justify-content: space-between;
   margin-bottom: 100px;
-}
-
-.section-column {
-
 }
 
 .subtitle-brown {
@@ -391,7 +389,7 @@ section {
   color: var(--brown);
   font-weight: 700;
   font-size: 14px;
-  font-family: OpenSans;
+  font-family: OpenSans, sans-serif;
   font-style: normal;
   line-height: 17px;
   text-transform: uppercase;
@@ -409,7 +407,7 @@ section {
 }
 
 .section-bottom-text p span {
-  display: block
+  display: block;
 }
 
 .section-column .image {
@@ -428,13 +426,14 @@ footer {
 }
 
 .feedback-form {
-  height: 190px;
-  background-color: var(--basic-dark);
-  padding-left: 55px;
-  padding-right: 55px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+  height: 190px;
+  padding-right: 55px;
+  padding-left: 55px;
+
+  background-color: var(--basic-dark);
 }
 
 .feedback-form .column {
@@ -443,11 +442,12 @@ footer {
 }
 
 .feedback-form h3 {
+  margin-top: auto;
+  margin-bottom: auto;
+
   font-weight: 400;
   font-size: 34px;
   line-height: 120%;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .email {
@@ -461,35 +461,41 @@ footer {
 }
 
 .input {
-  height: 50px;
-  padding: 15px;
   box-sizing: border-box;
   width: 415px;
-  border: 1px solid #E3E3E3;
+  height: 50px;
+  padding: 15px;
+
   vertical-align: middle;
-  /*flex: 1;*/
-  outline:none;
+
+  border: 1px solid #e3e3e3;
+
+  /* flex: 1; */
+  outline: none;
 }
 
 .input::placeholder {
   color: var(--basic-dark);
-  opacity: 0.2;
   font-size: 13.1px;
+
+  opacity: 0.2;
 }
 
 .input-label {
+  margin-bottom: 9px;
+
   font-weight: 400;
   font-size: 18px;
   line-height: 160%;
-  margin-bottom: 9px;
 }
 
 .send {
   width: 70px;
   height: 50px;
+
   background-color: var(--basic);
-  cursor: pointer;
   border: none;
+  cursor: pointer;
 }
 
 .send::before {
@@ -512,8 +518,8 @@ footer {
 }
 
 form {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 .contacts {
@@ -521,8 +527,9 @@ form {
 }
 
 .contacts-line {
+  margin-top: 16px;
+
   font-size: 14px;
   line-height: 160%;
   text-align: center;
-  margin-top: 16px;
 }
