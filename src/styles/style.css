@@ -10,6 +10,8 @@
   --blue: #1085c5;
 }
 
+/* reset styles */
+
 ul[class],
 ol[class] {
   padding: 0;
@@ -32,11 +34,7 @@ dd {
   margin: 0;
 }
 
-/* body { */
-
-/*  width: 1440px; */
-
-/* } */
+/* import fonts */
 
 @font-face {
   font-family: OpenSans;
@@ -47,6 +45,8 @@ dd {
   font-family: Neucha;
   src: url("../assets/fonts/Neucha-Regular.ttf") format("truetype");
 }
+
+/* main styles */
 
 h1,
 h2,
@@ -72,6 +72,46 @@ section {
   padding: 100px 0;
 }
 
+.container {
+  position: relative;
+  z-index: 10;
+  max-width: 1110px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* backgrounds */
+
+.background {
+  position: relative;
+
+  /* width: 100%; */
+
+  background-color: var(--light);
+}
+
+.background-brown {
+  background-color: var(--brown);
+}
+
+.background::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: url("../assets/images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+
+  content: "";
+}
+
+/* header-section */
+
 .header {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -80,7 +120,6 @@ section {
 
 .header-top {
   position: relative;
-
   margin-bottom: 200px;
 }
 
@@ -94,47 +133,7 @@ section {
   line-height: 86px;
 }
 
-.background {
-  position: relative;
 
-  /* z-index: -10; */
-
-  width: 100%;
-
-  background-color: var(--light);
-}
-
-.background::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  /* z-index: -1; */
-
-  display: block;
-  width: 100%;
-  height: 100%;
-
-  background-image: url("../assets/images/background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.1;
-
-  content: "";
-}
-
-.background-brown {
-  background-color: var(--brown);
-}
-
-.container {
-  position: relative;
-  z-index: 10;
-
-  max-width: 1110px;
-  margin-right: auto;
-  margin-left: auto;
-}
 
 .orange-text {
   color: var(--basic);
@@ -469,8 +468,6 @@ footer {
   vertical-align: middle;
 
   border: 1px solid #e3e3e3;
-
-  /* flex: 1; */
   outline: none;
 }
 
