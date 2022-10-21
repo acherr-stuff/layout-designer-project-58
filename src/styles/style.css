@@ -380,13 +380,19 @@ footer {
   flex-wrap: nowrap;
 }
 
+.input-label {
+  margin-bottom: 9px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+}
+
 .input {
   box-sizing: border-box;
   width: 415px;
   height: 50px;
   padding: 15px;
-
-  vertical-align: middle;
 
   border: 1px solid #e3e3e3;
   outline: none;
@@ -399,15 +405,7 @@ footer {
   opacity: 0.2;
 }
 
-.input-label {
-  margin-bottom: 9px;
-
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 160%;
-}
-
-.send {
+.btn-send {
   width: 70px;
   height: 50px;
 
@@ -416,7 +414,7 @@ footer {
   cursor: pointer;
 }
 
-.send::before {
+.btn-send::before {
   display: inline-block;
   width: 23px;
   height: 23px;
@@ -430,17 +428,12 @@ footer {
   content: "";
 }
 
-.text.email-subtitle {
+.email-subtitle {
   font-size: 12px;
   line-height: 160%;
 }
 
-form {
-  margin: 0;
-  padding: 0;
-}
-
-.contacts {
+.footer-contacts {
   margin-top: 60px;
 }
 
@@ -448,6 +441,5 @@ form {
   margin-top: 16px;
 
   font-size: 14px;
-  line-height: 160%;
   text-align: center;
 }
