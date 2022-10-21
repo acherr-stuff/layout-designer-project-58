@@ -67,6 +67,10 @@ h3 {
   font-size: 34px;
 }
 
+br {
+  height: 20px;
+}
+
 section {
   margin: 0 auto;
   padding: 100px 0;
@@ -84,11 +88,9 @@ section {
 .text {
   color: var(--dark);
 
-  /* font-weight: 400; */
   font-size: 16px;
   font-family: OpenSans, sans-serif;
 
-  /* font-style: normal; */
   line-height: 1.6;
 }
 
@@ -108,8 +110,6 @@ section {
 
 .background {
   position: relative;
-
-  /* width: 100%; */
 
   background-color: var(--light);
 }
@@ -157,12 +157,6 @@ section {
   z-index: 10;
 
   font-weight: 400;
-
-  /* font-size: 72px; */
-
-  /* font-style: normal; */
-
-  /* line-height: 86px; */
 }
 
 .header-image {
@@ -170,7 +164,6 @@ section {
   top: -45px;
   left: 296px;
 
-  /* width: auto; */
   height: 525px;
 }
 
@@ -192,14 +185,6 @@ section {
 
   color: var(--white);
   font-weight: 700;
-
-  /* font-size: 16px; */
-
-  /* font-family: OpenSans, serif; */
-
-  /* !*font-style: normal;*! */
-
-  /* line-height: 160%; */
   text-decoration: none;
 
   background-color: var(--basic);
@@ -209,23 +194,10 @@ section {
 
 #video {
   display: flex;
-
-  /* flex-direction: column; */
-
-  /* align-items: center; */
-
-  /* text-align: center; */
-
-  /* position: relative; */
 }
 
 .video-title {
   font-weight: 400;
-
-  /* font-size: 60px; */
-
-  /* line-height: 72px; */
-
   text-align: center;
 }
 
@@ -239,16 +211,6 @@ section {
 
   filter: drop-shadow(0 16px 32px rgb(0 0 0 / 15%));
 }
-
-/* .video-block { */
-
-/*  display: flex; */
-
-/*  align-items: center; */
-
-/*  justify-content: center; */
-
-/* } */
 
 /* navigation section */
 
@@ -276,11 +238,6 @@ section {
 .nav-item {
   flex-basis: 350px;
 
-  /* display: flex; */
-
-  /* flex-direction: column; */
-
-  /* justify-content: flex-start; */
   box-sizing: border-box;
   margin-bottom: 20px;
   padding: 24px;
@@ -296,18 +253,12 @@ section {
 
   font-weight: 400;
 
-  /* font-size: 64px; */
   line-height: 1;
-
-  /* margin-block-start: 0; */
 }
 
 .nav-item h3 {
   margin-bottom: 16px;
 
-  /* font-size: 64px; */
-
-  /* line-height: 70px; */
   font-weight: 400;
 }
 
@@ -323,16 +274,13 @@ section {
   font-size: 24px;
   font-family: Neucha, sans-serif;
 
-  /* font-style: normal; */
   line-height: 120%;
 }
 
 .line {
-  margin-top: 100px;
+  /*margin-top: 100px;*/
   margin-bottom: 20px;
   padding: 5px 10px;
-
-  /* column-span: all; */
 
   background: var(--brown);
 }
@@ -342,40 +290,41 @@ section {
   font-size: 14px;
   font-family: OpenSans, sans-serif;
 
-  /* font-style: normal; */
   line-height: 120%;
   text-transform: uppercase;
 }
 
-/* .ie-bottom-items { */
+.white-line {
+  /*margin-bottom: 20px;*/
+  /*padding: 5px 10px;*/
 
-/*  display: flex; */
+  color: var(--brown);
 
-/*  gap: 30px; */
+  background-color: var(--white);
+}
 
-/*  justify-content: space-between; */
-
-/* } */
-
-/* .ie-top .image { */
-
-/*  filter: drop-shadow(0 16px 32px rgb(0 0 0 / 15%)); */
-
-/* } */
+/*.white-line p {*/
+/*  !*color: var(--brown);*!*/
+/*  font-weight: 700;*/
+/*  font-size: 14px;*/
+/*  font-family: OpenSans, sans-serif;*/
+/*  line-height: 17px;*/
+/*  text-transform: uppercase;*/
+/*}*/
 
 .section-top {
   display: flex;
   flex-wrap: nowrap;
   gap: 30px;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   margin-bottom: 100px;
 }
 
 .subtitle-brown {
-  color: #d7ccc0;
+  color: var(--transparent-white);
   font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
+  /*font-size: 24px;*/
+  /*line-height: 29px;*/
 }
 
 .section-column h2 {
@@ -388,30 +337,11 @@ section {
   font-weight: 400;
 }
 
-.po-line {
-  margin-bottom: 20px;
-  padding: 5px 10px;
-
-  color: var(--brown);
-
-  background-color: var(--white);
-}
-
-.po-line p {
-  color: var(--brown);
-  font-weight: 700;
-  font-size: 14px;
-  font-family: OpenSans, sans-serif;
-  font-style: normal;
-  line-height: 17px;
-  text-transform: uppercase;
-}
-
 .section-bottom-text {
   display: flex;
   flex-wrap: nowrap;
   gap: 30px;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
 }
 
 .section-bottom-text p {
@@ -428,9 +358,7 @@ section {
   filter: drop-shadow(0 16px 32px rgb(0 0 0 / 15%));
 }
 
-br {
-  height: 20px;
-}
+/* footer styles */
 
 footer {
   padding-top: 100px;
